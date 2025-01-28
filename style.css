@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.3; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 320px;
+}
+
+h1 {
+    color: #1a73e8;
+    margin-bottom: 1.5rem;
+}
+
+.timer {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #202124;
+    margin-bottom: 1.5rem;
+}
+
+.warning {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 1.5rem;
+    animation: blink 1s infinite;
+}
+
+.warning.hidden, .hidden {
+    display: none;
+}
+
+.start-options {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.option-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.option-button:hover {
+    background-color: #1557b0;
+}
+
+.manual-time {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.manual-time input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 2px solid #1a73e8;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+}
+
+.manual-time input:focus {
+    border-color: #1557b0;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #1557b0;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#startButton.paused {
+    background-color: #f9a825;
+}
+
+#startButton.paused:hover {
+    background-color: #f57f17;
+}
+
+#resetButton {
+    background-color: #d32f2f;
+}
+
+#resetButton:hover {
+    background-color: #b71c1c;
+}
+
+.cancel-button {
+    background-color: #757575 !important;
+}
+
+.cancel-button:hover {
+    background-color: #616161 !important;
+} 

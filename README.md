@@ -28,6 +28,4 @@ Uygulama, önemli süre noktalarında sesli ve görsel bildirimler verecektir:
 - Belirlenen sürelerde "Hacı çar yatıyoo, alooo!" uyarısı görünür
 - Aynı zamanda sesli bildirim çalar
 
-## Geliştirici
-
-Bu uygulama, TS oyuncuları için geliştirilmiştir.
+Bu uygulama, Knight Online oyununda farm yapan oyuncuların kullanımı için geliştirilmiştir.

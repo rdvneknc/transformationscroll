@@ -25,7 +25,4 @@ TS süre takibi için basit ve kullanışlı bir web uygulaması.
 
 Uygulama, önemli süre noktalarında sesli ve görsel bildirimler verecektir:
 
-- Belirlenen sürelerde "Hacı çar yatıyoo, alooo!" uyarısı görünür
-- Aynı zamanda sesli bildirim çalar
-
 Bu uygulama, Knight Online oyununda farm yapan oyuncuların kullanımı için geliştirilmiştir.
